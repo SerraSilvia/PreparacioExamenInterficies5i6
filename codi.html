@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <header aria-label="Capçalera">
+      <img src="logo-botiga.png" alt="Logotip de la Botiga Virtual" />
+    </header>
+
+    <main aria-label="Contingut principal">
+      <form action="/enviar" method="POST">
+        <div class="formulari">
+          <label for="email-contacte">E-mail de contacte:</label>
+          <input
+            type="email"
+            id="email-contacte"
+            name="email"
+            placeholder="Escriu el teu correu"
+            aria-label="E-mail de contacte"
+            required
+          />
+        </div>
+
+        <div class="accions">
+          <p>
+            Per veure les nostres ofertes, consulta el nostre
+            <a href="ofertes.pdf" aria-label="Link per veure un pdf de les nostres ofertes">catàleg d'ofertes en PDF</a>.
+          </p>
+
+          <button type="submit" class="boto-blau">Enviar petició</button>
+          <div class="boto-blau" onclick="enviarDades()" role="button" tabindex="0" aria-label="Enviar petició">Enviar petició</div>
+
+          <button
+            type="button"
+            class="boto-tancar-modal"
+            aria-label="Tancar finestra de subscripció"
+          >
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

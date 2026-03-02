@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ca"><!-- Idioma en català -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Meta descripció per a SEO -->
+    <meta
+      name="description"
+      content="Blog personal amb articles i novetats. Subscriu-te a la newsletter per rebre contingut exclusiu directament al teu correu electrònic."
+    />
+    <title>Blog personal | Articles i subscripció a la newsletter</title>
+  </head>
+  <body>
+
+    <header aria-label="Capçalera">
+      <h1>Blog personal d'activitats i novetats</h1>
+    </header>
+
+    <main>
+      <section aria-label="Secció de subscripció">
+        <h2 id="titolSubscripcio">Subscriu-te</h2>
+        <p>Rep les últimes novetats directament a la teva bústia de correu.</p>
+
+        <!--En el codi que has escrit, l'ús de aria-label al formulari no és un error, 
+        però normalment no es considera una "bona pràctica" si ja tens un encapçalament 
+        (<h2>Subscriu-te</h2>) que explica què és la secció.-->
+        
+        <form
+          action="formulari.html"
+          method="post"
+          aria-label="Formulari de subscripció"
+        >
+          <div>
+            <label for="name">Nom de l'usuari:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Escriu el teu nom aquí"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Correu electrònic:</label>
+            <input
+              type="email"
+              id="email"
+              name="correu_electronic"
+              placeholder="exemple@correu.com"
+              required
+            />
+          </div>
+
+          <button type="submit" aria-label="Enviar subscripció">
+            <span aria-hidden="true">✉️</span><!--quedi ocult per a les tecnologies d'assistència per evitar soroll innecessari.-->
+            <!-- Img src="./nom_icona.png" alt="Icona de correu electrònic" -->
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

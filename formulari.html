@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ca"> <!-- Idioma en català -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta descripció per a SEO -->
+   <meta name="description" content="Blog personal amb articles i novetats. Subscriu-te a la newsletter per rebre contingut exclusiu directament al teu correu electrònic.">
+     <title>Blog personal | Articles i subscripció a la newsletter</title>
+  </head>
+  <body>
+      <section>
+        <h2 id="titolSubscripcio">Subscriu-te</h2>
+        <p>Rep les últimes novetats directament a la teva bústia de correu.</p>
+        
+        <form action="formulari.html" method="post" aria-label="Formulari de subscripció">
+
+          <label for="name">Nom de l'usuari:</label>
+          <input
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Escriu el teu nom aquí"
+          required
+          /><br /><br />
+
+          <label for="email">Correu electrònic:</label>
+          <input
+            type="email"
+            id="email"
+            name="correu_electronic"
+            placeholder="exemple@correu.com"
+            required
+          /><br /><br />
+
+          <button type="submit" aria-label="Enviar subscripció">
+            ✉️<!-- Img src="./nom_icona.png" -->
+          </button>
+        </form>
+      </section>
+  </body>
+</html>

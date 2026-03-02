@@ -1,0 +1,70 @@
+/* 1. BASE (Mòbil): Estils per defecte */
+/* No necessitem Media Query aquí perquè és el punt de partida */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espai entre targetes */
+    padding: 15px;
+}
+
+.product-card {
+    box-sizing: border-box;
+    width: 100%; /* Ocupa tota l'amplada disponible */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* 2. TABLET: A partir de 768px */
+@media (min-width: 768px) {
+    .product-card {
+        /* Calculem el 50% restant el gap per evitar desbordaments */
+        width: calc(50% - 10px); 
+    }
+}
+
+/* 3. DESKTOP: A partir de 1024px */
+@media (min-width: 1024px) {
+    .product-card {
+        /* Calculem el 33.3% per a tres columnes */
+        width: calc(33.33% - 13.34px);
+    }
+}
+
+/* Altra solucio*/
+body{
+    margin: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+.product-card{
+    width: 100%;
+    border: 1px solid;
+    border-color: black;
+    background: rgb(228, 228, 228);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@media (min-width: 576px) {
+  .product-card{
+    width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+  .product-card{
+    width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+  .product-card{
+    width: 33.3%;
+    }
+}
+
+
